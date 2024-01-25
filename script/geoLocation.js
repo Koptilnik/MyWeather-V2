@@ -2,7 +2,7 @@ export function Geo()
 {
     const options = {
         enableHighAccuracy: true,
-        timeout: 4000,
+        timeout: 2000,
         maximumAge: 0
     }
     async function success(pos)
