@@ -152,7 +152,7 @@ async function DownloadCities()
             let dataCity = await res.json();
             lat1 = dataCity.results[0].lat;
             lon1 = dataCity.results[0].lon;
-            gorod = dataCity.results[0].city + "<br>" + "(Может быть неверным)";
+            gorod = dataCity.results[0].city + "<br>" + "(Не работает)";
             findCity()
         }
         async function error(e)
