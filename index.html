@@ -3,227 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherByDimentrius</title>
-    <style>
-        .Hselector{
-            background-color: rgba(0, 0, 0, 0.6);
-        }
-        .Hselector-for-click{
-            background-color: rgba(0, 0, 0, 0.6);
-        }
-        .search{
-            width: 500px;
-            height: 400px;
-            background-color: rgba(0, 0, 0, 0.6);
-            text-align: center;
-            overflow: auto;
-            border-radius: 20px;
-            margin: 30px;
-           
-        }
-        #spisok{
-            color: white;
-        }
-        ul {
-                list-style-type: none;
-                padding: 0;
-        }
-
-        body{
-            margin: auto;
-            background-image: url("icons/bg.jpg");
-            background-color: rgb(75, 75, 209);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100%;
-            background-position: center;
-
-           
-        }
-        *{
-            font-family: RobotoSlab;
-        }
-        #sel{
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-        #inp{
-            margin-left: 10px;
-        }
-        @font-face {
-		font-family: 'RobotoSlab';
-		src: url(font/RobotoSlab.ttf); 
-	}
-    .cont{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around; 
-
-    }
-    .vivod{
-        width: 700px;
-        height: 400px;
-        background-color: rgba(0, 0, 0, 0.6);
-        text-align: center;
-        margin-left: 10px;
-        position: relative;
-        border-radius: 20px;
-        margin: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #pogodi-cont{
-        width: 700px;
-        height: 300px;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .pogodi
-    {
-        display: none;
-        width: 150px;
-        height: 150px;
-        bottom: 25px;
-    }
-    .cont-cont{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-bottom: 300px;
-    }
-    @media (max-width: 830px) {
-        .cont-cont{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .vivod{
-        width: 300px;
-        height: 200px;
-        background-color: rgba(0, 0, 0, 0.6);
-        text-align: center;
-        margin-left: 10px;
-        position: relative;
-        border-radius: 20px;
-        margin: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .search{
-            width: 300px;
-            height: 200px;
-            background-color: rgba(0, 0, 0, 0.6);
-            text-align: center;
-            overflow: auto;
-            border-radius: 20px;
-            margin: 30px;
-           
-        }
-        #pogodi-cont{
-        width: 100%;
-        height: 300px;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-        .pogodi
-        {
-            display: none;
-            width: 100px;
-            height: 100px;
-            bottom: 25px;
-        }
-        #city-info{
-            margin-top: 10px;
-        }
-    }
-    .text-cont{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100px;
-    }
-    button{
-    height: 40px;
-	background-color: rgb(154, 169, 236);
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-
-	position: relative;
-	text-shadow:  1px 1px 2px rgba(0, 0, 0, 0.3);
-   box-shadow: 7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-    }
-.banner{
-    position: relative;
-    margin-top: 200px;
-    margin-bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 700px;
-    min-height: 400px;
-    border-radius: 30px;
-    background-image: url('icons/banner_bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    padding: 50px;
-    box-shadow: inset 1000px 0px rgba(0, 0, 0, 0.5);
-}
-.banner > span {
-    width: 70%;
-    font-size: 56px;
-    color: white;
-}
-header{
-            width: 100%;
-            height: 80px;
-            background-color: rgb(176, 176, 255);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 26px;
-            opacity: 0.45;
-            position: fixed;
-            top:0; 
-            z-index: 2;
-        }
-.logo{
-    width: 80px;
-    height: 80px;
-}
-.profile{
-    width: 300px;
-    height: 80px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding-right: 10px;
-    font-size: 24px;
-}
-.avatar{
-    background-color: gray;
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-    border-radius: 50% ;
-}
-
-    </style>
+    <title>WeatherByDimentrius</title>  
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
@@ -232,20 +13,16 @@ header{
             <img src="icons/logo.jpg" alt="logo" class="logo">
         </div>
         <div class="title">
-            Моя погода
+            Weather App
         </div>
-
-         <div class="profile">
-            Личный кабинет
-            <div class="avatar"> </div>
-         </div>
 
         </header>
 
     <div class="banner">
         <span>
-            Узнать актуальный прогноз погоды в своём регионе
+           Прогноз погоды в вашем регионе
         </span>
+
         <img src="" alt="">
     </div>
 
@@ -265,8 +42,6 @@ header{
         <div class="search">
             <ul id="spisok"></ul>
         </div>
-        <br>
-        
     <div class="vivod" >
         <div class="text-cont">
             <span id="city-info" style="color: white;"></span>
@@ -280,6 +55,23 @@ header{
         </div>
     </div>
 
+    <footer id="picassoFooter">
+
+        <div class="footer-contact">
+            <h3>Контакты</h3>
+            <p>Почта: "someMail@gmail.com"</p>
+            <p>Телефон: 8 888 555 35 35</p>
+        </div>
+        <div class="footer-social">
+            <h3>Ссылки</h3>
+            <div class="social-icons">
+                <a href="https://github.com/Dimentrius1137"><img src="icons/github.png" class="social-icon"></a>
+                <a href="#"><img src="icons/vk.png" class="social-icon"></a>
+
+            </div>
+        </div>
+    </footer>
+    
     <script src="script/wscript.js"></script>
     
 </body>
