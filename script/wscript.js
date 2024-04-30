@@ -41,7 +41,7 @@ async function DownloadCities()
     let ListElement = dynamicSpisok.children;
     function Search()
     {
-        let item;
+
         for(let i = 0; i < ListElement.length; i++)
         {
             
@@ -153,15 +153,7 @@ async function DownloadCities()
             lat1 = dataCity.results[0].lat;
             lon1 = dataCity.results[0].lon;
             gorod = dataCity.results[0].city;
-        //    for(let s = 0; s < data.length; s++)
-        //     {
-        //         if(lat1 == data[s].coords.lat && lon1 == data[s].coords.lon)
-        //         {
-        //             gorod = data[s].name;
-                    
-        //         }
-                
-        //     }
+
             findCity()
         }
         
