@@ -152,16 +152,16 @@ async function DownloadCities()
             let dataCity = await res.json();
             lat1 = dataCity.results[0].lat;
             lon1 = dataCity.results[0].lon;
-            // gorod = dataCity.results[0].city;
-           for(let s = 0; s < data.length; s++)
-            {
-                if(lat1 == data[s].coords.lat && lon1 == data[s].coords.lon)
-                {
-                    gorod = data[s].name;
+            gorod = dataCity.results[0].city;
+        //    for(let s = 0; s < data.length; s++)
+        //     {
+        //         if(lat1 == data[s].coords.lat && lon1 == data[s].coords.lon)
+        //         {
+        //             gorod = data[s].name;
                     
-                }
+        //         }
                 
-            }
+        //     }
             findCity()
         }
         
